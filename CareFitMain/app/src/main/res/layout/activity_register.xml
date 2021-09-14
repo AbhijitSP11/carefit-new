@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterAct">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_medi"
+        android:alpha="0.5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="15dp">
+
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Create Care Fit account"
+            android:fontFamily="@font/lufga_bold"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+
+
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:inputType="textPersonName"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="Name"
+            android:background="@drawable/edittextround"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:ems="10"
+            android:hint="Enter Your Email"
+            android:layout_marginTop="15dp"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:background="@drawable/edittextround"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"/>
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:hint="+91 | Contact Number"
+            android:layout_marginTop="15dp"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+            android:background="@drawable/edittextround"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:hint="Enter Your Password"
+
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edittextround"
+            android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"/>
+
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:hint="Confirm Password"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edittextround"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"/>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="I agree to Terms and condtitons"
+             android:textColor="@color/black"
+             android:layout_marginTop="15dp"
+             android:textSize="14sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="SIGN UP"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/Green"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

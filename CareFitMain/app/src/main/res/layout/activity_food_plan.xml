@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodPlanActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/food"
+        tools:ignore="MissingConstraints"
+        android:alpha="0.95"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp"
+        android:scrollbars="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.8"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/vegetarianfood" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="8dp"
+                android:text="For You"
+                android:fontFamily="@font/lufga_medium"
+                android:textColor="#ED0B58"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="4dp"
+                android:background="#ED0B58"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="8dp"
+                android:fontFamily="@font/lufga_semibold"
+                android:text="Nutrition and Meal Planning"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Recommendation for a healthy lifestyle based on your personal details."
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:padding="8dp"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="Diet Must Include"
+                        android:textColor="@color/Green"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:padding="6dp"
+                        android:text="Cereals, Pulses, green-leafy vegetables, other veges, roots and tubers, milk, fats and oil, sugar nad jaggery."
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Diet"
+                android:padding="8dp"
+                android:fontFamily="@font/lufga_medium"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView5"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_margin="6dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

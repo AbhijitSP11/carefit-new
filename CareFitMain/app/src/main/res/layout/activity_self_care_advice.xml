@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelfCareAdviceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarSize="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/selfcare"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#EA1583"/>
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Getting Started"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:fontFamily="@font/lato"
+                android:textColor="#EA1583"
+                />
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 Powerful Habits For Self-Love and Self-Acceptance"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Because the relationship with yourself is the most important one you have"
+                android:textSize="18sp"
+                android:textColor="#979494"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We focus a lot on our external relationships — our significant other.we often neglect our relationship with ourselves and aren’t always the best at practicing self-love each day and we are often too hard on ourselves. This month, we challenge you to take a step towards self-love and self-acceptance."
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lufgalight"
+                android:textAlignment="gravity"/>
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 Powerful Self-Love Habits to Adopt"
+                android:textSize="16sp"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/black"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/unplug"/>
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#1 Unplug"
+                android:textSize="18sp"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="One of the nicest things you can do for yourself is to give yourself more unplugged time, and a harder boundary around work, obligations, and expectations. Try giving yourself a fully unplugged day (no phone or computer!), or a consistent one to two hours per day this week of no-tech. You’ll allow your brain and nervous system to recalibrate a bit, and start to create some sacred space for yourself. You and your health ARE worth the discomfort of turning off all the devices for a bit."
+                android:textSize="16sp"
+                android:fontFamily="@font/lufgalight"
+                android:textColor="@color/black"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/aff"/>
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#2 Try daily affirmations "
+                android:textSize="18sp"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Words have power. And by affirming yourself with positive “I am” statements, you can train your brain in a way that shifts your outlook (and can help you be more resilient in the face of “threats” to your self-esteem). If you have a goal of letting things roll off your shoulder more easily, this can help."
+                android:textSize="16sp"
+                android:fontFamily="@font/lufgalight"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#3 Work Out"
+                android:textSize="18sp"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/black"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:layout_height="250dp"
+                android:src="@drawable/workout2jpg"/>
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Just like better self-esteem leads to better health, physical activity also leads to better self-esteem. Whether it’s a heart-opening yoga session to activate that chakra or a blast of butt-kicking cardio, you’ll be doing wonders for your body, brain, and self-love levels.
+
+If you haven’t joined our community yet, sign up for free and try a FitOn feel-good yoga flow to practice self-love this month and beyond."
+                android:textSize="16sp"
+                android:fontFamily="@font/lufgalight"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

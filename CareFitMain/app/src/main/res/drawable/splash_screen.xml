@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Larger blue circle -->
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:bottom="30dp"
+                android:left="30dp"
+                android:right="30dp"
+                android:top="30dp" />
+            <size
+                android:width="300dp"
+                android:height="300dp" />
+            <stroke
+                android:width="30dp"
+                android:color="@color/Green_1" />
+        </shape>
+    </item>
+    <!-- Green circle in middle -->
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:bottom="30dp"
+                android:left="30dp"
+                android:right="30dp"
+                android:top="30dp" />
+            <size
+                android:width="300dp"
+                android:height="300dp" />
+            <stroke
+                android:width="30dp"
+                android:color="@color/SplashGreen2" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:bottom="30dp"
+                android:left="30dp"
+                android:right="30dp"
+                android:top="30dp" />
+            <size
+                android:width="300dp"
+                android:height="300dp" />
+            <stroke
+                android:width="30dp"
+                android:color="@color/SplashGreen3" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:bottom="30dp"
+                android:left="30dp"
+                android:right="30dp"
+                android:top="30dp" />
+            <size
+                android:width="200dp"
+                android:height="200dp" />
+            <stroke
+                android:width="30dp"
+                android:color="@color/SplashGreen4" />
+        </shape>
+    </item>
+
+    <!-- Smaller red circle at front -->
+    <item android:drawable="@drawable/logonew"
+        android:width="150dp"
+        android:height="150dp"
+        android:gravity="center">
+        <shape android:shape="oval">
+            <size
+                android:width="100dp"
+                android:height="100dp" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+
+</layer-list>

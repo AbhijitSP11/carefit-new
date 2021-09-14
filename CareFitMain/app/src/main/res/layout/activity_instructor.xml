@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        >
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Become an Instructor"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:textSize="22sp"/>
+
+
+        <EditText
+            android:id="@+id/editTextInstructorName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:inputType="textPersonName"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="Name"
+            android:background="@drawable/edittextround"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextInstructorAge"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:ems="10"
+            android:hint="Age"
+            android:layout_marginTop="15dp"
+            android:inputType="textMultiLine"
+            android:drawableLeft="@drawable/life"
+            android:background="@drawable/edittextround"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"/>
+        <EditText
+            android:id="@+id/editTextInstructorSkills"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:hint="Skills"
+            android:layout_marginTop="15dp"
+            android:inputType="text"
+            android:drawableLeft="@drawable/personaltrainerr"
+            android:background="@drawable/edittextround"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextInstructorFees"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:hint="Fees"
+            android:layout_marginTop="15dp"
+            android:inputType="number"
+            android:background="@drawable/edittextround"
+            android:drawableLeft="@drawable/iconsmoney"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"/>
+
+
+        <EditText
+            android:id="@+id/EditTextInstructorAbout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:hint="Describe about yourself"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:gravity="top"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittextround"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I agree to Terms and condtitons"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerTrainerBtn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Join"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/Green"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

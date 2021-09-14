@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NutritionAdviceActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarSize="0dp"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/eatingfood"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#EA1583"/>
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Getting Started"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato"
+            android:textColor="#EA1583"
+            />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The 3 Best Foods For a Better Mood"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Psst...chololate made the list"
+            android:textSize="18sp"
+            android:textColor="#979494"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you’re feeling crankier than usual lately, you’re not alone. These long and unusual months of more time spent at home and getting out of our usual routine can leave us feeling out of sorts. And while we may not have control over all the stressors going on in our day-to-day lives, there is a ton we can do to brighten our spirits and put that pep back in our step. Enter mood-boosting foods."
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lufgalight"
+            android:textAlignment="gravity"/>
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The 3 Best Foods For a Better Mood"
+            android:textSize="16sp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/black"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/chocolate"/>
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#1 Raw Cacao"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chocolate fans rejoice — raw cacao (very different from those sweetened chocolate bars) has some pretty darn impressive properties.
+
+Some studies have suggested that the flavonoids found in cocoa contain both cognitive and mood-supporting properties (heck, yes!) So go ahead and sprinkle some raw cacao nibs over your morning bowl of oatmeal, on top of an acai bowl, or enjoy mixed into homemade granola."
+            android:textSize="16sp"
+            android:fontFamily="@font/lufgalight"
+            android:textColor="@color/black"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/banner4"/>
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#2 Nuts and Seeds"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Need a new healthy snack that doubles as a delicious mood-boosting food? Make a batch of homemade trail mix (recipe below) to stay full and nourished when snacking on the go.
+
+Nuts and seeds, particularly peanuts, pumpkin, and sesame seeds, are rich in tryptophan, an important amino acid that plays a key role in the production of serotonin (the commonly known mood-supporting neurotransmitter). Tryptophan has been found to have a positive effect on overall mood, making these nuts and seeds an excellent addition to a well-balanced mood-boosting diet."
+            android:textSize="16sp"
+            android:fontFamily="@font/lufgalight"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#3 Unsweetened Yogurt or kefir"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/black"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:layout_height="250dp"
+            android:src="@drawable/yogurt"/>
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not only does unsweetened yogurt make one of the most convenient snacks, but it can be added to smoothies for added creaminess, or made into a healthy yogurt parfait with some nuts and seeds and raw cacao nibs to satisfy a sweet tooth craving. So if you’re looking for a mood-boosting food that’s super easy to include in your diet, look no further than plain old unsweetened yogurt — need it dairy-free? Try coconut or almond yogurt.
+
+Not only does it make an easy snack, but gut-supporting foods rich in probiotics may also help support a happier mood too — how? The gut-brain connection!  Some research has suggested that the bacteria in the gut may not only play a role in digestion but our mood and overall energy too.
+
+Unsweetened yogurt (or kefir if you can tolerate a bit of a tangier flavor) are great sources of gut-loving probiotics, so consider these “mood foods” for your healthy and balanced diet."
+            android:textSize="16sp"
+            android:fontFamily="@font/lufgalight"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

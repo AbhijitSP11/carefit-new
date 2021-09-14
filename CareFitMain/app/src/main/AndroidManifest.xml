@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.CareFitMain">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NavActivityDemo"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".InstructorActivity"></activity>
+        <activity android:name=".GoogleSigninActivity" />
+        <activity android:name=".MeditationActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".PaymentActivity"
+            android:parentActivityName=".TrainerDisplayActivity"/>
+        <activity android:name=".AppointmentActivity" />
+        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".SelfCareAdviceActivity" />
+        <activity android:name=".WellnessAdviceActivity" />
+        <activity android:name=".NutritionAdviceActivity" />
+        <activity android:name=".FitnessAdviceActivity" />
+        <activity android:name=".FirstOnBoardingActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginAct" />
+        <activity
+            android:name=".NavAct"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NavActivityDemo.NoActionBar" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".RegisterAct"
+            android:parentActivityName=".LoginAct" />
+        <activity
+            android:name=".ProfileAct"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".TrainerActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".TherapistActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ExerciseActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".DisplayAct"
+            android:parentActivityName=".TherapistActivity" />
+        <activity
+            android:name=".TrainerDisplayActivity"
+            android:parentActivityName=".TrainerActivity" />
+        <activity android:name=".User_data" />
+        <activity
+            android:name=".ExerciseDisplayActivity"
+            android:parentActivityName=".ExerciseActivity" />
+        <activity
+            android:name=".FoodPlanActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".AdviceActivity" />
+    </application>
+
+</manifest>

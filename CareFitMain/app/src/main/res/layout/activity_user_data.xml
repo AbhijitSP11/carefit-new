@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/lufga_bold"
+            android:text="Step 2 of 2"
+            android:textColor="@color/Green"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lufga_semibold"
+            android:text="Personal details"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/inform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/personal"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lufga_medium"
+            android:text="Let us know about you\n to create best plans for you at \nCare fit."
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lufga_regular"
+                android:text="Age"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/uAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:inputType="number"
+                android:hint="age"
+                android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lufga_regular"
+                    android:text="Height"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:inputType="number"
+                    android:hint="in cm"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lufga_regular"
+                    android:text="Current Weight"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/current_weight"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:hint="in kg"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lufga_regular"
+                    android:text="Goal Weight"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/goal_weight"
+                    android:layout_width="wrap_content"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:hint="in kg"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/lufga_regular"
+                        android:text="Gender"
+                        android:textSize="16sp"
+                        android:layout_weight="1"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="2">
+                    <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                        android:fontFamily="@font/lufga_medium"
+                        android:layout_weight="1"/>
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:fontFamily="@font/lufga_medium"
+                            android:layout_weight="1"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lufga_regular"
+                    android:text="Profession"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+               <androidx.appcompat.widget.AppCompatSpinner
+                   android:id="@+id/spinner"
+                   android:layout_width="200dp"
+                   android:layout_height="40dp"
+                   android:scrollbars="vertical"
+                   android:spinnerMode="dropdown"
+                   />
+
+            </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/userSubmit"
+                    android:layout_marginTop="60dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="START"
+                    android:fontFamily="@font/lufga_medium"
+                    android:layout_gravity="center_horizontal"
+                    app:cornerRadius="16dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_baseline_circle_25"
+                        android:layout_gravity="center"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_baseline_circle_24"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
